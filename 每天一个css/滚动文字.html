@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            .box {
+                height: auto;
+                background-color: blue;
+            }
+
+            .box-text{
+                color: white;
+                background: -webkit-gradient(linear,left top,right top,color-stop(0,#4d4d4d),color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: slidetounlock 3s infinite;
+                -webkit-animation: slidetounlock 3s infinite;
+                -webkit-text-size-adjust: none;
+            }
+
+            @-webkit-keyframes slidetounlock{
+                0%  {
+                    background-position:-200px 0
+                }
+                
+                100% {
+                    background-position:200px 0
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            例子：
+            <div class="box">
+                <span class="box-text">滚动的文字，我是滚动的文字</span>
+            </div>
+        </div>
+    </body>
+</html>
