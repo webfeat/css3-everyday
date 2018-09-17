@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <style>
+        #box {
+            height:200px;
+            width:200px;
+        }
+
+        .circle-out{
+            height: inherit;
+            width: inherit;
+            border: 20px solid blue;
+            display: inline-block;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        /* 绘制弧形 */
+        .circle-part{
+            display: inline-block;
+            position: relative;
+            width:0px;
+            height: 0px;
+            border-radius: 50%;
+            border: 100px solid #0000ff05;
+            border-top: 100px solid blue;
+            top: -220px;
+            left: 20px;
+            transform: rotate(0deg);
+            animation: run-part 5s infinite;
+        }
+
+        .part1{
+            height: 0px;
+            width: 0px;
+            border-radius: 50%;
+            border:100px solid #fafafa;
+            position: relative;
+            border-top: 100px solid #ff000000;
+            top: -420px;
+            left: 20px;
+            transform: rotate(45deg);
+            animation: run-part1 5s infinite;
+        }
+
+        .circle-inner{
+            display: inline-block;
+            position: relative;
+            height: 0px;
+            width: 0px;
+            border: 20px solid blue;
+            border-radius: 50%;
+            top: 80px;
+            z-index: 1000;
+        }
+
+        @-webkit-keyframes run-part1{
+            0%{
+                transform: rotate(45deg);
+            }
+
+            100% {
+                transform: rotate(405deg);
+            }
+        }
+
+        @-webkit-keyframes run-part{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="circle-out">
+                <div class="circle-inner"> </div>
+            </div>
+           <div class="circle-part">
+               
+            </div>
+           <div class="part1">
+
+            </div> 
+        </div>
+    </body>
+</html>
