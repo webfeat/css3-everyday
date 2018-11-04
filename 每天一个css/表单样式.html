@@ -1,0 +1,248 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <style>
+        html,
+        body,
+        div,
+        span,
+        label,
+        form {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        .contanier {
+            width: 100%;
+        }
+
+        .row {
+            width: 100%;
+            display: inline-block;
+            box-shadow: 0 0 1px 1px rgba(173, 173, 173, 0.6);
+            margin: 5px 0px;
+        }
+
+        .col-5 {
+            width: 49.5%;
+            display: inline-block
+        }
+
+        .col-1 {
+            width: 9.5%;
+            display: inline-block;
+        }
+
+        .col-2 {
+            width: 19.5%;
+            display: inline-block;
+        }
+
+        .col-3 {
+            width: 28.5%;
+            display: inline-block;
+        }
+
+        .col-4 {
+            width: 39.5%;
+            display: inline-block;
+        }
+
+        .col-6 {
+            width: 59.5%;
+            display: inline-block;
+        }
+
+        .col-7 {
+            width: 69.5%;
+            display: inline-block;
+        }
+
+        .col-8 {
+            width: 79.5%;
+            display: inline-block;
+        }
+
+        .col-9 {
+            width: 89.5%;
+            display: inline-block;
+        }
+
+        .col-10 {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .panel {
+            padding: 10px;
+        }
+
+        .panel-head {
+            padding: 10px;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        .panel-text {
+            padding-left: 10px;
+        }
+
+        .panel-text:before {
+            display: block;
+            width: 3.5px;
+            background: #2196F3;
+            height: 1em;
+            position: relative;
+            float: left;
+            top: 0.2em;
+            content: '';
+        }
+
+        .form-group {
+            padding: 5px 0px;
+            float: left;
+        }
+
+        .form-control {}
+
+        .form-inline {
+            display: inline-block;
+        }
+
+        label {}
+
+        .align-right {
+            text-align: right;
+        }
+
+        input {
+            border-radius: 3px;
+            border: 1px solid gainsboro;
+            padding: 5px;
+        }
+
+        input:focus {
+            outline-color: #ff000000;
+        }
+
+        @media screen and (max-width:500px) {
+            .col-xs-5 {
+                width: 100%;
+            }
+
+            input {
+                width: 100% !important;
+                padding: 10px 5px;
+            }
+
+            .form-group label {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="row">
+            <div class="col-10">
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-text">
+                        个人信息
+                    </span>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 col-xs-5">
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-text">
+                            家庭信息
+                         </span>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-control">
+                            <div class="form-group col-10">
+                                <label class="col-3 align-right">
+                                                    姓名：
+                                                </label>
+                                <input class="col-7" placeholder="姓名">
+                            </div>
+                            <div class="form-group col-10">
+                                <label class="col-3 align-right">
+                                                    性别：
+                                                </label>
+                                <input class="col-7" placeholder="性别">
+                            </div>
+                            <div class="form-group col-10">
+                                <label class="col-3 align-right">
+                                                    年龄：
+                                                </label>
+                                <input class="col-7" placeholder="年龄">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 col-xs-5">
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-text">
+                                学历信息
+                            </span>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-control">
+                            <div class="form-group col-10">
+                                <label class="col-3 align-right">
+                                                            毕业学校：
+                                                        </label>
+                                <input class="col-7" placeholder="毕业学校">
+                            </div>
+                            <div class="form-group col-10">
+                                <label class="col-3 align-right">
+                                                            所属院校：
+                                                        </label>
+                                <input class="col-7" placeholder="所属院校">
+                            </div>
+                            <div class="form-group col-10">
+                                <label class="col-3 align-right">
+                                                            所学专业：
+                                                        </label>
+                                <input class="col-7" placeholder="所学专业">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10">
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-text">
+                            附件上传
+                        </span>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
