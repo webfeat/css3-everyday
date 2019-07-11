@@ -1,0 +1,33 @@
+{
+  "name": "css3-everyday",
+  "version": "1.0.0",
+  "description": "1、  完成博客展示部分的静态页面。\r 2、  完成一次css练习。",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 8081 --host --watch-poll",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webfeat/css3-everyday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webfeat/css3-everyday/issues"
+  },
+  "homepage": "https://github.com/webfeat/css3-everyday#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^5.0.3",
+    "lodash": "^4.17.14"
+  }
+}
