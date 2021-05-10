@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^5.0.3",
-    "lodash": "^4.17.14"
+    "lodash": "^4.17.21"
   }
 }
